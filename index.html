@@ -1,8 +1,34 @@
-<h1 align="center"> Dude-star Dude-Star</h1>
-<h3 align="center">Dude star application for windows Dude star windows app here. If you don't find the Dude star app on the web you can find here TR-- Dude Star windows indir. Dude Star windows indirmek istiyorsanız buradan indirebilirsiniz</h3>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="determineCharacter()">Karakteri belirle</button>
+    <div id="result"></div>
 
-- 🔭 Link is: [https://github.com/uygamateur/Dude-star/blob/main/dudestar_x64.zip](https://github.com/uygamateur/Dude-star/blob/main/dudestar_x64.zip)
+    <script>
+        function determineCharacter() {
+            var resultDiv = document.getElementById('result');
+            var randomNumber = Math.random();
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+            if (randomNumber < 0.25) {
+                resultDiv.textContent = 'Karakter: Vampir';
+                resultDiv.style.color = 'red';
+            } else {
+                resultDiv.textContent = 'Karakter: Köylü';
+                resultDiv.style.color = 'green';
+            }
+        }
+    </script>
+</body>
+</html>
