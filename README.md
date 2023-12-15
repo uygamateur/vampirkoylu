@@ -1,1 +1,0 @@
-icerik buraya yazilacak
